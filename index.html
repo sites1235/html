@@ -1,13 +1,20 @@
+<!DOCTYPE html>
 <html>
-<script>
-  var i = 0;
-  while (true) {
-    var win = window.open("", "_blank");
-    win.location.href = "https://sites1235.github.io/site123335.github.io/;
-    i++;
-    if (i > 100) {
-      break;
-    }
-  }
-</script>
+<head>
+    <title>Loop and Open Website</title>
+    <script>
+        let i = 0;
+        function loop() {
+            window.open("https://sites1235.github.io/site123335.github.io/", "_blank"); // replace with the website you want to open
+            i++;
+            if (i < 10) { // you can set the number of iterations here
+                setTimeout(loop, 1); // call this function again after 1 second
+            }
+        }
+        loop();
+    </script>
+</head>
+<body>
+
+</body>
 </html>
